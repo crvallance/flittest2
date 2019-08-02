@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "WLC_SNMP_RW_USER"
+author = "Colin Vallance"
+author-email = "colin.vallance@cdw.com"
+requires = ["pysnmp"]
+
+[tool.flit.entrypoints."console_scripts"]
+wlcsnmp = "WLC_SNMP_RW_USER:main"
+
